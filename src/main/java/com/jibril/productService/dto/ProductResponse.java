@@ -3,6 +3,7 @@ package com.jibril.productService.dto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,8 +13,9 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Entity
 @Data
-@Table( name ="ProductRequests")
-public class ProductRequest {
+@Builder
+@Table( name ="ProductResponse")
+public class ProductResponse {
     private String id;
     private String name;
     private String description;
